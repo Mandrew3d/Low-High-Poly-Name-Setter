@@ -1257,7 +1257,7 @@ def get_addon_folder():
         #print(mod)
         #print(mod.bl_info['name'])
         
-        if mod.bl_info['name'] == 'Set_ID':
+        if mod.bl_info['name'] == 'Low-High Poly Name Setter':
             filepath = mod.__file__
             s_path = filepath[:-len(bpy.path.basename(filepath))]
         else:
