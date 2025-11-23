@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Low-High Poly Name Setter",
     "author": "Mandrew3D",
-    "version": (2, 3, 3),
+    "version": (2, 5),
     "blender": (5, 0, 0),
     "location": "View3D > UI > Set-ID",
     "description": "Addon for setting ID names",
