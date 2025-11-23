@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Low-High Poly Name Setter",
     "author": "Mandrew3D",
-    "version": (2, 3, 1),
+    "version": (2, 3, 2),
     "blender": (5, 0, 0),
     "location": "View3D > UI > Set-ID",
     "description": "Addon for setting ID names",
@@ -738,8 +738,8 @@ def exp_fbx_lp(self,context):
         cols = context.scene.setid_collections
         
         #indexcol = bpy.context.scene.id_slider.col_id 
-        #name = get_active_collection_name()
-        #namecollp = "Low Poly_" + name
+        name = get_active_collection_name()
+        namecollp = "Low Poly_" + name
         objects_to_exp = get_objects_in_collections(cols)
 
         path =  bpy.path.abspath(bpy.context.scene.path_s.exp_path)
