@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Low-High Poly Name Setter",
     "author": "Mandrew3D",
-    "version": (2, 3),
+    "version": (2, 3, 1),
     "blender": (5, 0, 0),
     "location": "View3D > UI > Set-ID",
     "description": "Addon for setting ID names",
@@ -682,7 +682,7 @@ def exp_fbx(self,context):
         trishp = bpy.context.scene.lp_g.hp_tris
         
         if bpy.context.scene.lp_g.lp_gal == True:
-            indexcol = bpy.context.scene.id_slider.col_id 
+            #indexcol = bpy.context.scene.id_slider.col_id 
             name = get_active_collection_name()
             namecollp = "Low Poly_" + name
             objects_to_exp = list_objects_in_collection(namecollp)
@@ -693,7 +693,7 @@ def exp_fbx(self,context):
             export_fbx(path, objects_to_exp, trislp)
             
         if bpy.context.scene.lp_g.hp_gal == True:
-            indexcol = bpy.context.scene.id_slider.col_id 
+            #indexcol = bpy.context.scene.id_slider.col_id 
             
             name = get_active_collection_name()
             namecollp = "High Poly_" + name
@@ -737,9 +737,9 @@ def exp_fbx_lp(self,context):
         
         cols = context.scene.setid_collections
         
-        indexcol = bpy.context.scene.id_slider.col_id 
-        name = get_active_collection_name()
-        namecollp = "Low Poly_" + name
+        #indexcol = bpy.context.scene.id_slider.col_id 
+        #name = get_active_collection_name()
+        #namecollp = "Low Poly_" + name
         objects_to_exp = get_objects_in_collections(cols)
 
         path =  bpy.path.abspath(bpy.context.scene.path_s.exp_path)
