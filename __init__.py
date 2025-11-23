@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Low-High Poly Name Setter",
     "author": "Mandrew3D",
-    "version": (2, 3, 2),
+    "version": (2, 3, 3),
     "blender": (5, 0, 0),
     "location": "View3D > UI > Set-ID",
     "description": "Addon for setting ID names",
@@ -1257,7 +1257,7 @@ def get_addon_folder():
         #print(mod)
         #print(mod.bl_info['name'])
         
-        if mod.bl_info['name'] == 'Low-High-Poly-Name-Setter':
+        if mod.bl_info['name'] == addon_name:
             filepath = mod.__file__
             s_path = filepath[:-len(bpy.path.basename(filepath))]
         else:
